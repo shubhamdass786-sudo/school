@@ -1336,6 +1336,10 @@
                 const clearBtn = document.getElementById('clear-' + key);
                 if (clearBtn) clearBtn.style.display = isAdmin ? 'inline-flex' : 'none';
             } else {
+                // If not in admin mode and viewer already has content (like static links), don't overwrite it
+                if (!isAdmin && viewer.innerHTML.trim().length > 0 && !viewer.innerHTML.includes('No document uploaded')) {
+                    return;
+                }
                 viewer.classList.remove('has-file');
                 viewer.innerHTML = `<i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded`;
                 const clearBtn = document.getElementById('clear-' + key);
