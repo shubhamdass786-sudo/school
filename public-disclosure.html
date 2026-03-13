@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Disclosure | Howard Lane Senior School</title>
+    <meta name="description" content="CBSE Mandatory Public Disclosure – Howard Lane Senior School">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        :root {
+            --gold: #c9a84c;
+            --blue: #0b2239;
+        }
+
+        /* ──── Page Layout ──── */
+        .pd-hero {
+            background: linear-gradient(rgba(11, 34, 57, 0.88), rgba(11, 34, 57, 0.88)), url('assets/school.jpg') center/cover;
+            padding: 120px 0 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .pd-hero .badge-tag {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .pd-hero h1 {
+            color: white;
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pd-hero p {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.95rem;
+        }
+
+        .pd-main {
+            padding: 3rem 0 4rem;
+            background: #f1f5f9;
+        }
+
+        /* ──── TOC ──── */
+        .toc-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.75rem 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .toc-box h3 {
+            font-size: 1rem;
+            color: var(--blue);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .toc-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc-list a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--blue);
+            font-weight: 500;
+            font-size: 0.92rem;
+        }
+
+        .toc-list a:hover {
+            color: var(--gold);
+        }
+
+        /* ──── Disclosure Section ──── */
+        .ds {
+            margin-bottom: 3rem;
+        }
+
+        .ds-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .ds-letter {
+            width: 40px;
+            height: 40px;
+            background: var(--blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .ds-header h2 {
+            font-size: 1.55rem;
+            color: var(--blue);
+            margin: 0;
+        }
+
+        /* ──── Disclosure Card ──── */
+        .dc {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border-left: 4px solid var(--gold);
+            padding: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .dc h3 {
+            font-size: 1rem;
+            color: var(--blue);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ──── Table ──── */
+        .dt {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .dt th {
+            background: var(--blue);
+            color: white;
+            padding: 0.65rem 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .dt td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #e8ecf0;
+            color: #334155;
+        }
+
+        .dt tr:last-child td {
+            border-bottom: none;
+        }
+
+        .dt tr:nth-child(even) td {
+            background: #f8fafc;
+        }
+
+        /* ──── Doc view area ──── */
+        .doc-viewer {
+            margin-top: 1rem;
+            border: 1px dashed #cbd5e1;
+            border-radius: 8px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: #f8fafc;
+            font-size: 0.9rem;
+            color: #64748b;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .doc-viewer.has-file {
+            border-color: var(--gold);
+            background: #fffbeb;
+            color: var(--blue);
+            justify-content: flex-start;
+        }
+
+        .view-doc-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--blue);
+            color: white;
+            padding: 0.45rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .view-doc-btn:hover {
+            background: var(--gold);
+            color: white;
+        }
+
+        /* ──── Note ──── */
+        .note-box {
+            background: #fefce8;
+            border: 1px solid #fde68a;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            font-size: 0.88rem;
+            color: #7a5c00;
+            margin-top: 2rem;
+        }
+
+        /* ══════════════════════════════════
+           ADMIN MODE STYLES
+        ══════════════════════════════════ */
+
+        /* Floating admin widget */
+        #admin-fab {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.75rem;
+        }
+
+        #admin-toggle-btn {
+            width: 52px;
+            height: 52px;
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        #admin-toggle-btn:hover {
+            background: var(--gold);
+        }
+
+        #admin-toggle-btn.admin-active {
+            background: #ef4444;
+        }
+
+        .admin-bar {
+            display: none;
+            background: #0f172a;
+            color: white;
+            padding: 0.65rem 1.25rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .admin-bar.visible {
+            display: flex;
+        }
+
+        .admin-bar i {
+            color: var(--gold);
+        }
+
+        #logout-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.3rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* Upload controls (shown in admin mode) */
+        .admin-upload-area {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #94a3b8;
+        }
+
+        body.admin-mode .admin-upload-area {
+            display: block;
+        }
+
+        .upload-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--blue);
+            color: white;
+            padding: 0.5rem 1.1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .upload-label:hover {
+            background: var(--gold);
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        .clear-doc-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.45rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: none;
+        }
+
+        .edit-text-area {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #94a3b8;
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            resize: vertical;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        body.admin-mode .edit-text-area {
+            display: block;
+        }
+
+        body.admin-mode .edit-text-area+.public-note-text {
+            display: none;
+        }
+
+        /* in admin mode show blue border on cards */
+        body.admin-mode .dc {
+            border-left-color: #3b82f6;
+            outline: 1px dashed #93c5fd;
+        }
+
+        .admin-section-label {
+            display: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        body.admin-mode .admin-section-label {
+            display: block;
+        }
+
+        /* Login Modal */
+        #login-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login-modal.open {
+            display: flex;
+        }
+
+        .modal-box {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .modal-box h2 {
+            font-size: 1.4rem;
+            color: var(--blue);
+            margin-bottom: 0.4rem;
+        }
+
+        .modal-box p {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-input {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            margin-bottom: 0.9rem;
+            font-family: var(--font-body);
+            box-sizing: border-box;
+        }
+
+        .modal-login-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .modal-login-btn:hover {
+            background: var(--gold);
+        }
+
+        .modal-error {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="School Website.html" class="logo">
+                <img src="assets/logo.png" alt="Howard Lane Logo" style="height:50px;width:auto;">
+                <div class="logo-text">
+                    <h1>Howard Lane</h1><span>Senior School</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="School Website.html#home" class="nav-link">Home</a></li>
+                    <li><a href="School Website.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="School Website.html#academics" class="nav-link">Academics</a></li>
+                    <li><a href="School Website.html#admissions" class="nav-link">Admissions</a></li>
+                    <li><a href="School Website.html#campus" class="nav-link">Campus Life</a></li>
+                    <li><a href="School Website.html#contact" class="nav-link btn-primary-outline">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle" id="mobile-toggle"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pd-hero">
+        <div class="container">
+            <span class="badge-tag">CBSE Mandatory</span>
+            <h1>Public Disclosure</h1>
+            <p>Affiliation No: 1630861 &nbsp;|&nbsp; School Code: 20871</p>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div class="pd-main">
+        <div class="container">
+
+            <!-- TOC -->
+            <div class="toc-box">
+                <h3><i class='bx bx-list-ul' style="color:var(--gold);"></i> &nbsp;Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#school-details"><i class='bx bx-building-house'></i> A. School Details</a></li>
+                    <li><a href="#infrastructure"><i class='bx bx-building'></i> B. Infrastructure & Facilities</a></li>
+                    <li><a href="#teachers"><i class='bx bx-chalkboard'></i> C. Teacher Information</a></li>
+                    <li><a href="#academics"><i class='bx bxs-graduation'></i> D. Academic Performance</a></li>
+                    <li><a href="#statutory"><i class='bx bx-file'></i> E. Other Statutory Details</a></li>
+                    <li><a href="#certificates"><i class='bx bx-folder-open'></i> F. Documents &amp; Certificates</a></li>
+                </ul>
+            </div>
+
+            <!-- ─── A. School Details ─── -->
+            <div class="ds" id="school-details">
+                <div class="ds-header">
+                    <div class="ds-letter">A</div>
+                    <h2>School Details</h2>
+                </div>
+                <div class="dc" data-section="school-details-main">
+                    <div class="admin-section-label">Editable Section – School Details</div>
+                    <h3>Part A – School Details for Mandatory Disclosure</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Name of School</td>
+                            <td>Howard Lane Senior School</td>
+                        </tr>
+                        <tr>
+                            <td>Affiliation Number</td>
+                            <td>1630861</td>
+                        </tr>
+                        <tr>
+                            <td>School Code</td>
+                            <td>20871</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>Village- Thatha Chabhal, Distt. Tarn Taran – 143301, Punjab</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+91 7087578590 / +91 98780-29600</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Howardlanethatha@Gmail.com</td>
+                        </tr>
+                    </table>
+                    <!-- Document area -->
+                    <div class="doc-viewer" id="viewer-school-details-main">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i>
+                        No document uploaded
+                    </div>
+                    <!-- Admin upload -->
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Document (PDF / Word / Image)</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="school-details-main">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-school-details-main" data-target="school-details-main">✕
+                            Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── B. Infrastructure ─── -->
+            <div class="ds" id="infrastructure">
+                <div class="ds-header">
+                    <div class="ds-letter">B</div>
+                    <h2>Infrastructure & Facilities</h2>
+                </div>
+
+                <div class="dc" data-section="infra-1">
+                    <div class="admin-section-label">Editable Section – Infrastructure Details 1</div>
+                    <h3>CBSE Public Mandatory Disclosure – Infrastructure Details 1</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Total Area (sq. mtrs)</td>
+                            <td id="td-infra-area">15477</td>
+                        </tr>
+                        <tr>
+                            <td>Playground Area (sq. mtrs)</td>
+                            <td id="td-infra-pg">To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Classrooms</td>
+                            <td id="td-infra-class">31 Rooms</td>
+                        </tr>
+                        <tr>
+                            <td>Boys Toilets</td>
+                            <td id="td-infra-bt">4</td>
+                        </tr>
+                        <tr>
+                            <td>Girls Toilets</td>
+                            <td id="td-infra-gt">8</td>
+                        </tr>
+                        <tr>
+                            <td>Drinking Water Facility</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Ramp for Disabled</td>
+                            <td id="td-infra-ramp">Yes</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-infra-1">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Document</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="infra-1">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-infra-1" data-target="infra-1">✕ Remove</button>
+                    </div>
+                </div>
+
+                <div class="dc" data-section="infra-2">
+                    <div class="admin-section-label">Editable Section – Infrastructure Details 2</div>
+                    <h3>CBSE Mandatory Public Disclosure – Infrastructure Details 2</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Facility</th>
+                            <th>Available</th>
+                            <th>Remarks</th>
+                        </tr>
+                        <tr>
+                            <td>Science Lab</td>
+                            <td>Yes</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Lab</td>
+                            <td>Yes</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Library</td>
+                            <td>Yes</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Smart Classrooms</td>
+                            <td>Yes</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Infrastructure</td>
+                            <td>Yes</td>
+                            <td>Volleyball court & playground</td>
+                        </tr>
+                        <tr>
+                            <td>Medical Room</td>
+                            <td>Yes</td>
+                            <td>To be updated</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-infra-2">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Document</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="infra-2">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-infra-2" data-target="infra-2">✕ Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── C. Teacher Info ─── -->
+            <div class="ds" id="teachers">
+                <div class="ds-header">
+                    <div class="ds-letter">C</div>
+                    <h2>Teacher Information</h2>
+                </div>
+                <div class="dc" data-section="teachers-main">
+                    <div class="admin-section-label">Editable Section – Teacher Details</div>
+                    <h3>Appendix IX – CBSE Mandatory Public Disclosure: Teacher Details</h3>
+                    <p style="color:#64748b;font-size:0.88rem;">List of all teaching staff with qualifications and
+                        experience.</p>
+                    <table class="dt">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Designation</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Balraj Singh Batth</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Malkeet Kaur</td>
+                            <td>PRT</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Meena Kumari</td>
+                            <td>TGT</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Amanpreet Kaur</td>
+                            <td>PGT</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align:center;color:#94a3b8;font-style:italic;">Full list
+                                available on request / to be updated</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-teachers-main">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Staff Document (PDF / Word)</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="teachers-main">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-teachers-main" data-target="teachers-main">✕
+                            Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── D. Academic Performance ─── -->
+            <div class="ds" id="academics">
+                <div class="ds-header">
+                    <div class="ds-letter">D</div>
+                    <h2>Academic Performance</h2>
+                </div>
+
+                <div class="dc" data-section="academics-1">
+                    <div class="admin-section-label">Editable Section – Board Results</div>
+                    <h3>Appendix IX – Academic Performance (Board Results)</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Year</th>
+                            <th>Class</th>
+                            <th>Total</th>
+                            <th>Appeared</th>
+                            <th>Passed</th>
+                            <th>Pass %</th>
+                        </tr>
+                        <tr>
+                            <td>2024–25</td>
+                            <td>Class X</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>2024–25</td>
+                            <td>Class XII</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>2023–24</td>
+                            <td>Class X</td>
+                            <td>44</td>
+                            <td>44</td>
+                            <td>44</td>
+                            <td>91%</td>
+                        </tr>
+                        <tr>
+                            <td>2023–24</td>
+                            <td>Class XII</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>94%</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-academics-1">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Result Document</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="academics-1">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-academics-1" data-target="academics-1">✕ Remove</button>
+                    </div>
+                </div>
+
+                <div class="dc" data-section="academics-2">
+                    <div class="admin-section-label">Editable Section – Result Information</div>
+                    <h3>Result Information – Appendix IX CBSE Mandatory Public Disclosure</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Class X</th>
+                            <th>Class XII</th>
+                        </tr>
+                        <tr>
+                            <td>Students Registered</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Students Appeared</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Students Passed</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Pass Percentage</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Distinctions</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-academics-2">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Result Document</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="academics-2">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-academics-2" data-target="academics-2">✕ Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── E. Other Statutory Details ─── -->
+            <div class="ds" id="statutory">
+                <div class="ds-header">
+                    <div class="ds-letter">E</div>
+                    <h2>Other Statutory Details</h2>
+                </div>
+                <div class="dc" data-section="statutory-main">
+                    <div class="admin-section-label">Editable Section – Statutory Details</div>
+                    <h3>Appendix IX – Other Details</h3>
+                    <table class="dt">
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Fee Structure (Tuition)</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Development Fee</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Charges</td>
+                            <td>To be updated</td>
+                        </tr>
+                        <tr>
+                            <td>Total Student Enrollment</td>
+                            <td>900+</td>
+                        </tr>
+                        <tr>
+                            <td>Grievance Officer</td>
+                            <td>Principal – Balraj Singh Batth</td>
+                        </tr>
+                        <tr>
+                            <td>Grievance Email</td>
+                            <td>Howardlanethatha@Gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Grievance Policy</td>
+                            <td>Available at school office</td>
+                        </tr>
+                    </table>
+                    <div class="doc-viewer" id="viewer-statutory-main">
+                        <i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded
+                    </div>
+                    <div class="admin-upload-area">
+                        <span
+                            style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i
+                                class='bx bx-upload'></i> Upload Document</span>
+                        <label class="upload-label">
+                            <i class='bx bx-upload'></i> Choose File
+                            <input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                data-target="statutory-main">
+                        </label>
+                        <button class="clear-doc-btn" id="clear-statutory-main" data-target="statutory-main">✕
+                            Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── F. Documents & Certificates ─── -->
+            <div class="ds" id="certificates">
+                <div class="ds-header">
+                    <div class="ds-letter">F</div>
+                    <h2>Documents &amp; Certificates</h2>
+                </div>
+
+                <!-- Fire Safety -->
+                <div class="dc" data-section="cert-fire">
+                    <div class="admin-section-label">Editable Section – Fire Safety Certificate</div>
+                    <h3><i class='bx bx-flame' style="color:#ef4444;"></i> Fire Safety Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-fire"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-fire"></label>
+                        <button class="clear-doc-btn" id="clear-cert-fire" data-target="cert-fire">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Building Certificate -->
+                <div class="dc" data-section="cert-building">
+                    <div class="admin-section-label">Editable Section – Building Safety Certificate</div>
+                    <h3><i class='bx bx-building' style="color:var(--blue);"></i> Building Safety Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-building"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-building"></label>
+                        <button class="clear-doc-btn" id="clear-cert-building" data-target="cert-building">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Affiliation Certificate -->
+                <div class="dc" data-section="cert-affiliation">
+                    <div class="admin-section-label">Editable Section – Affiliation Certificate</div>
+                    <h3><i class='bx bxs-graduation' style="color:var(--gold);"></i> Affiliation Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-affiliation"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-affiliation"></label>
+                        <button class="clear-doc-btn" id="clear-cert-affiliation" data-target="cert-affiliation">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Water Certificate -->
+                <div class="dc" data-section="cert-water">
+                    <div class="admin-section-label">Editable Section – Water Safety Certificate</div>
+                    <h3><i class='bx bx-droplet' style="color:#3b82f6;"></i> Water Safety Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-water"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-water"></label>
+                        <button class="clear-doc-btn" id="clear-cert-water" data-target="cert-water">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Society Certificate -->
+                <div class="dc" data-section="cert-society">
+                    <div class="admin-section-label">Editable Section – Society Registration Certificate</div>
+                    <h3><i class='bx bxs-institution' style="color:var(--blue);"></i> Society Registration Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-society"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-society"></label>
+                        <button class="clear-doc-btn" id="clear-cert-society" data-target="cert-society">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Health & Sanitation -->
+                <div class="dc" data-section="cert-health">
+                    <div class="admin-section-label">Editable Section – Health &amp; Sanitation Certificate</div>
+                    <h3><i class='bx bx-plus-medical' style="color:#22c55e;"></i> Health &amp; Sanitation Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-health"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-health"></label>
+                        <button class="clear-doc-btn" id="clear-cert-health" data-target="cert-health">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- Fee Structure -->
+                <div class="dc" data-section="cert-fee">
+                    <div class="admin-section-label">Editable Section – Fee Structure Document</div>
+                    <h3><i class='bx bx-rupee' style="color:var(--gold);"></i> Fee Structure</h3>
+                    <div class="doc-viewer" id="viewer-cert-fee"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Document (PDF / Word)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-fee"></label>
+                        <button class="clear-doc-btn" id="clear-cert-fee" data-target="cert-fee">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- DEO Certificate -->
+                <div class="dc" data-section="cert-deo">
+                    <div class="admin-section-label">Editable Section – DEO Certificate</div>
+                    <h3><i class='bx bx-id-card' style="color:var(--blue);"></i> DEO Certificate</h3>
+                    <div class="doc-viewer" id="viewer-cert-deo"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-deo"></label>
+                        <button class="clear-doc-btn" id="clear-cert-deo" data-target="cert-deo">✕ Remove</button>
+                    </div>
+                </div>
+
+                <!-- No Objection Certificate -->
+                <div class="dc" data-section="cert-noc">
+                    <div class="admin-section-label">Editable Section – No Objection Certificate</div>
+                    <h3><i class='bx bx-check-shield' style="color:#22c55e;"></i> No Objection Certificate (NOC)</h3>
+                    <div class="doc-viewer" id="viewer-cert-noc"><i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded</div>
+                    <div class="admin-upload-area">
+                        <span style="font-size:0.82rem;font-weight:600;color:#475569;display:block;margin-bottom:0.5rem;"><i class='bx bx-upload'></i> Upload Certificate (PDF / Image)</span>
+                        <label class="upload-label"><i class='bx bx-upload'></i> Choose File<input type="file" class="upload-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" data-target="cert-noc"></label>
+                        <button class="clear-doc-btn" id="clear-cert-noc" data-target="cert-noc">✕ Remove</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Note -->
+            <div class="note-box">
+                <i class='bx bx-info-circle' style="color:#f59e0b;"></i>
+                <strong>Note:</strong> All documents should be self-attested and clearly visible on the public
+                disclosure page.
+                Items marked <em>"To be updated"</em> will be filled as official documents are received and verified.
+            </div>
+
+        </div><!-- /container -->
+    </div><!-- /pd-main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="School Website.html" class="logo footer-logo">
+                    <img src="assets/logo.png" alt="Howard Lane Logo"
+                        style="height:50px;width:auto;background:white;padding:5px;border-radius:8px;">
+                    <div class="logo-text">
+                        <h3>Howard Lane</h3><span>Senior School</span>
+                    </div>
+                </a>
+                <p>Providing each student a diverse education in a safe, supportive environment.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="School Website.html#about">About Us</a></li>
+                    <li><a href="School Website.html#academics">Academics</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="public-disclosure.html">Public Disclosure</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Disclosure</h4>
+                <ul>
+                    <li><a href="#school-details">School Details</a></li>
+                    <li><a href="#infrastructure">Infrastructure</a></li>
+                    <li><a href="#teachers">Teacher Info</a></li>
+                    <li><a href="#academics">Academic Results</a></li>
+                    <li><a href="#statutory">Statutory Details</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map'></i> Village- Thatha Chabhal, Tarn Taran-143301</li>
+                    <li><i class='bx bx-phone'></i> +91 7087578590</li>
+                    <li><i class='bx bx-envelope'></i> Howardlanethatha@Gmail.com</li>
+                    <li><i class='bx bxs-institution'></i> Affiliation No: 1630861</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Howard Lane Senior School. All rights reserved.</p>
+            <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        </div>
+    </footer>
+
+    <!-- ── Admin FAB ── -->
+    <div id="admin-fab">
+        <div class="admin-bar" id="admin-bar">
+            <i class='bx bxs-shield'></i>
+            <span>Admin Mode Active</span>
+            <button id="logout-btn"><i class='bx bx-log-out'></i> Logout</button>
+        </div>
+        <button id="admin-toggle-btn" title="Admin Login">
+            <i class='bx bx-lock-alt'></i>
+        </button>
+    </div>
+
+    <!-- ── Login Modal ── -->
+    <div id="login-modal">
+        <div class="modal-box" style="position:relative;">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div style="font-size:2.5rem;color:var(--blue);margin-bottom:0.5rem;"><i class='bx bxs-shield'></i></div>
+            <h2>Admin Access</h2>
+            <p>Enter the admin password to enable editing and document uploads.</p>
+            <input type="text" class="modal-input" id="admin-username" placeholder="Username">
+            <input type="password" class="modal-input" id="admin-password" placeholder="Password">
+            <button class="modal-login-btn" id="do-login-btn">Login</button>
+            <p class="modal-error" id="login-error">Incorrect credentials. Please try again.</p>
+            <p style="font-size:0.78rem;color:#94a3b8;margin-top:1rem;">
+                Default: <strong>admin</strong> / <strong>HLSS@2024</strong>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        /* ══════════════════════════════════════
+           PUBLIC DISCLOSURE – ADMIN SCRIPT
+           Storage: IndexedDB (no size limit)
+        ══════════════════════════════════════ */
+
+        const ADMIN_USER = 'admin';
+        const ADMIN_PASS = 'HLSS@2024';
+        const DB_NAME    = 'pd_docs_db';
+        const DB_STORE   = 'docs';
+
+        let isAdmin = false;
+        let db = null;
+
+        // ── Open / init IndexedDB ──
+        function openDB() {
+            return new Promise((resolve, reject) => {
+                const req = indexedDB.open(DB_NAME, 1);
+                req.onupgradeneeded = e => e.target.result.createObjectStore(DB_STORE);
+                req.onsuccess  = e => resolve(e.target.result);
+                req.onerror    = e => reject(e.target.error);
+            });
+        }
+        function dbGet(key) {
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(DB_STORE, 'readonly');
+                const req = tx.objectStore(DB_STORE).get(key);
+                req.onsuccess = e => resolve(e.target.result);
+                req.onerror   = e => reject(e.target.error);
+            });
+        }
+        function dbPut(key, value) {
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                const req = tx.objectStore(DB_STORE).put(value, key);
+                req.onsuccess = () => resolve();
+                req.onerror   = e => reject(e.target.error);
+            });
+        }
+        function dbDelete(key) {
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(DB_STORE, 'readwrite');
+                const req = tx.objectStore(DB_STORE).delete(key);
+                req.onsuccess = () => resolve();
+                req.onerror   = e => reject(e.target.error);
+            });
+        }
+
+        // ── Elements ──
+        const fabBtn      = document.getElementById('admin-toggle-btn');
+        const adminBar    = document.getElementById('admin-bar');
+        const loginModal  = document.getElementById('login-modal');
+        const closeModalBtn = document.getElementById('modal-close-btn');
+        const doLoginBtn  = document.getElementById('do-login-btn');
+        const loginError  = document.getElementById('login-error');
+        const logoutBtn   = document.getElementById('logout-btn');
+
+        // ── Toast notification ──
+        function showToast(msg, isError = false) {
+            const existing = document.getElementById('pd-toast');
+            if (existing) existing.remove();
+            const toast = document.createElement('div');
+            toast.id = 'pd-toast';
+            toast.style.cssText = `
+                position:fixed;bottom:5rem;right:2rem;z-index:9999;
+                background:${isError ? '#ef4444' : '#22c55e'};color:#fff;
+                padding:0.75rem 1.25rem;border-radius:10px;
+                font-size:0.9rem;font-weight:600;font-family:var(--font-body);
+                box-shadow:0 4px 16px rgba(0,0,0,0.18);
+                display:flex;align-items:center;gap:0.5rem;
+            `;
+            toast.innerHTML = `<i class='bx ${isError ? 'bx-error-circle' : 'bx-check-circle'}'></i> ${msg}`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3500);
+        }
+
+        // ── Object URL cache (revoke old ones to free memory) ──
+        const _objURLs = {};
+        function getObjURL(key, blob) {
+            if (_objURLs[key]) URL.revokeObjectURL(_objURLs[key]);
+            _objURLs[key] = URL.createObjectURL(blob);
+            return _objURLs[key];
+        }
+
+        // ── Compress image via Canvas → Blob ──
+        function compressImage(file, maxW = 1920, quality = 0.75) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                const tmpURL = URL.createObjectURL(file);
+                img.onload = () => {
+                    URL.revokeObjectURL(tmpURL);
+                    let { naturalWidth: w, naturalHeight: h } = img;
+                    if (w > maxW) { h = Math.round(h * maxW / w); w = maxW; }
+                    const canvas = document.createElement('canvas');
+                    canvas.width = w; canvas.height = h;
+                    canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+                    canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Canvas compression failed')),
+                                  'image/jpeg', quality);
+                };
+                img.onerror = reject;
+                img.src = tmpURL;
+            });
+        }
+
+        // ── Deflate compress/decompress any Blob ──
+        async function compressBlob(blob) {
+            const stream = blob.stream().pipeThrough(new CompressionStream('deflate'));
+            return new Blob([await new Response(stream).arrayBuffer()]);
+        }
+        async function decompressBlob(blob, mimeType) {
+            const stream = blob.stream().pipeThrough(new DecompressionStream('deflate'));
+            return new Blob([await new Response(stream).arrayBuffer()], { type: mimeType });
+        }
+
+        // ── Render a viewer from IndexedDB (multi-file array) ──
+        async function renderViewer(key) {
+            const viewer = document.getElementById('viewer-' + key);
+            if (!viewer) return;
+            let entries = await dbGet(key);
+            // Normalize: old data may be a single object, not an array
+            if (!Array.isArray(entries)) entries = entries ? [entries] : [];
+
+            if (entries && entries.length > 0) {
+                viewer.classList.add('has-file');
+                let html = '';
+                for (let i = 0; i < entries.length; i++) {
+                    const entry = entries[i];
+                    const viewBlob = entry.compressed
+                        ? await decompressBlob(entry.blob, entry.mimeType)
+                        : entry.blob;
+                    const objURL = getObjURL(key + '_' + i, viewBlob);
+                    const icon = entry.type === 'image' ? 'bx-image' : 'bx-file-blank';
+                    let rowBtn = '';
+                    if (entry.type === 'image') {
+                        rowBtn = `<a href="${objURL}" target="_blank" class="view-doc-btn"><i class='bx bx-external-link'></i> View</a>`;
+                    } else if (entry.type === 'pdf') {
+                        rowBtn = `<a href="${objURL}" target="_blank" class="view-doc-btn"><i class='bx bx-external-link'></i> View PDF</a>`;
+                    } else {
+                        rowBtn = `<a href="${objURL}" download="${entry.name}" class="view-doc-btn"><i class='bx bx-download'></i> Download</a>`;
+                    }
+                    const removeBtn = isAdmin
+                        ? `<button class="remove-file-btn" data-key="${key}" data-index="${i}" title="Remove this file"
+                                style="background:#fee2e2;color:#ef4444;border:none;border-radius:6px;padding:0.3rem 0.7rem;
+                                       font-size:0.78rem;cursor:pointer;font-weight:600;white-space:nowrap;">✕</button>`
+                        : '';
+                    html += `<div style="display:flex;align-items:center;gap:0.75rem;padding:0.5rem 0;
+                                         border-bottom:1px solid #f1f5f9;flex-wrap:wrap;">
+                                <i class='bx ${icon}' style="font-size:1.2rem;color:#64748b;flex-shrink:0;"></i>
+                                <span style="flex:1;min-width:0;"><strong style="font-size:0.9rem;">${entry.name}</strong>
+                                <small style="color:#94a3b8;margin-left:0.4rem;">(${(entry.size/1024).toFixed(0)} KB)</small></span>
+                                ${rowBtn}${removeBtn}
+                             </div>`;
+                }
+                html += `<div style="font-size:0.78rem;color:#94a3b8;padding-top:0.4rem;">${entries.length} file${entries.length>1?'s':''} uploaded</div>`;
+                viewer.innerHTML = html;
+
+                // wire per-file remove buttons
+                viewer.querySelectorAll('.remove-file-btn').forEach(btn => {
+                    btn.addEventListener('click', async () => {
+                        const k   = btn.dataset.key;
+                        const idx = parseInt(btn.dataset.index);
+                        const arr = await dbGet(k) || [];
+                        // revoke obj URL for this slot
+                        const urlKey = k + '_' + idx;
+                        if (_objURLs[urlKey]) { URL.revokeObjectURL(_objURLs[urlKey]); delete _objURLs[urlKey]; }
+                        arr.splice(idx, 1);
+                        if (arr.length === 0) await dbDelete(k);
+                        else await dbPut(k, arr);
+                        await renderViewer(k);
+                    });
+                });
+
+                const clearBtn = document.getElementById('clear-' + key);
+                if (clearBtn) clearBtn.style.display = isAdmin ? 'inline-flex' : 'none';
+            } else {
+                viewer.classList.remove('has-file');
+                viewer.innerHTML = `<i class='bx bx-file-blank' style="font-size:1.4rem;"></i> No document uploaded`;
+                const clearBtn = document.getElementById('clear-' + key);
+                if (clearBtn) clearBtn.style.display = 'none';
+            }
+        }
+
+        // ── Init all viewers ──
+        async function initViewers() {
+            const viewers = document.querySelectorAll('[id^="viewer-"]');
+            for (const v of viewers) {
+                await renderViewer(v.id.replace('viewer-', ''));
+            }
+        }
+
+        // ── File upload handler (multi-file, auto-compress) ──
+        document.querySelectorAll('.upload-input').forEach(input => {
+            input.addEventListener('change', async function () {
+                const key   = this.dataset.target;
+                const files = Array.from(this.files);
+                if (!files.length) return;
+                this.value = '';
+
+                showToast(`⏳ Processing ${files.length} file${files.length>1?'s':''}…`);
+
+                try {
+                    let existing = await dbGet(key);
+                    // Normalize: old data may be a single object, not an array
+                    if (!Array.isArray(existing)) existing = existing ? [existing] : [];
+                    let totalOrig = 0, totalComp = 0;
+
+                    for (const file of files) {
+                        const ext     = file.name.split('.').pop().toLowerCase();
+                        const isImage = ['jpg','jpeg','png','gif','webp'].includes(ext);
+                        const isPdf   = ext === 'pdf';
+                        const type    = isImage ? 'image' : isPdf ? 'pdf' : 'other';
+                        const mimeType = file.type || 'application/octet-stream';
+                        let blob = file, savedName = file.name;
+
+                        if (isImage) {
+                            // Compress image → JPEG via Canvas
+                            blob = await compressImage(file);
+                            savedName = file.name.replace(/\.[^.]+$/, '') + '_compressed.jpg';
+                        }
+                        // PDFs/docs: store raw — IndexedDB handles any size
+
+                        totalOrig += file.size;
+                        totalComp += blob.size;
+                        existing.push({ name: savedName, blob, type, size: file.size, compressedSize: blob.size, compressed: false, mimeType });
+                    }
+
+                    await dbPut(key, existing);
+                    await renderViewer(key);
+                    const clearBtn = document.getElementById('clear-' + key);
+                    if (clearBtn) clearBtn.style.display = 'inline-flex';
+
+                    const origKB = (totalOrig / 1024).toFixed(0);
+                    const newKB  = (totalComp / 1024).toFixed(0);
+                    const saved  = Math.round((1 - totalComp / totalOrig) * 100);
+                    showToast(`✓ ${files.length} file${files.length>1?'s':''} saved! ${origKB} KB → ${newKB} KB (${saved}% smaller)`);
+                } catch (err) {
+                    showToast('Failed to process file(s). Please try again.', true);
+                }
+            });
+        });
+
+        // ── Clear ALL docs in a section ──
+        document.querySelectorAll('.clear-doc-btn').forEach(btn => {
+            btn.addEventListener('click', async function () {
+                const key = this.dataset.target;
+                // revoke all cached object URLs for this key
+                Object.keys(_objURLs).filter(k => k.startsWith(key + '_')).forEach(k => {
+                    URL.revokeObjectURL(_objURLs[k]); delete _objURLs[k];
+                });
+                await dbDelete(key);
+                await renderViewer(key);
+            });
+        });
+
+        // ── Admin login ──
+        function activateAdmin() {
+            isAdmin = true;
+            document.body.classList.add('admin-mode');
+            fabBtn.classList.add('admin-active');
+            fabBtn.innerHTML = "<i class='bx bx-lock-open-alt'></i>";
+            fabBtn.title = 'Admin Active';
+            adminBar.classList.add('visible');
+            loginModal.classList.remove('open');
+            document.querySelectorAll('[id^="viewer-"]').forEach(v => {
+                renderViewer(v.id.replace('viewer-', ''));
+            });
+        }
+
+        function deactivateAdmin() {
+            isAdmin = false;
+            document.body.classList.remove('admin-mode');
+            fabBtn.classList.remove('admin-active');
+            fabBtn.innerHTML = "<i class='bx bx-lock-alt'></i>";
+            fabBtn.title = 'Admin Login';
+            adminBar.classList.remove('visible');
+            document.querySelectorAll('.clear-doc-btn').forEach(b => b.style.display = 'none');
+        }
+
+        fabBtn.addEventListener('click', () => {
+            if (isAdmin) { deactivateAdmin(); return; }
+            loginModal.classList.add('open');
+            loginError.style.display = 'none';
+            document.getElementById('admin-username').value = '';
+            document.getElementById('admin-password').value = '';
+            document.getElementById('admin-username').focus();
+        });
+
+        closeModalBtn.addEventListener('click', () => loginModal.classList.remove('open'));
+        loginModal.addEventListener('click', e => { if (e.target === loginModal) loginModal.classList.remove('open'); });
+
+        doLoginBtn.addEventListener('click', attemptLogin);
+        document.getElementById('admin-password').addEventListener('keydown', e => {
+            if (e.key === 'Enter') attemptLogin();
+        });
+
+        function attemptLogin() {
+            const u = document.getElementById('admin-username').value.trim();
+            const p = document.getElementById('admin-password').value;
+            if (u === ADMIN_USER && p === ADMIN_PASS) {
+                activateAdmin();
+            } else {
+                loginError.style.display = 'block';
+                document.getElementById('admin-password').value = '';
+            }
+        }
+
+        logoutBtn.addEventListener('click', deactivateAdmin);
+
+        // ── Init ──
+        openDB().then(database => {
+            db = database;
+            initViewers();
+        }).catch(() => showToast('Storage unavailable. Please use a modern browser.', true));
+    </script>
+</body>
+
+</html>
