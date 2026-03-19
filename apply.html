@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Howard Lane Senior School</title>
+    <meta name="description" content="Apply for admission at Howard Lane Senior School. Fill out our online application form to get started.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- BoxIcons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .application-section {
+            padding: 8rem 0 5rem;
+            background: var(--bg-light);
+            min-height: 80vh;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .form-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        .google-form-wrapper {
+            position: relative;
+            padding-bottom: 150%; /* Aspect ratio for the form */
+            height: 0;
+            overflow: hidden;
+        }
+        .google-form-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .instructions {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-left: 5px solid var(--primary-blue);
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+
+<body class="inner-page">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Howard Lane Logo" style="height: 50px; width: auto;">
+                <div class="logo-text">
+                    <h1>Howard Lane</h1>
+                    <span>Senior School</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#academics" class="nav-link">Academics</a></li>
+                    <li><a href="index.html#admissions" class="nav-link">Admissions</a></li>
+                    <li><a href="index.html#campus" class="nav-link">Campus Life</a></li>
+                    <li><a href="index.html#contact" class="nav-link btn-primary-outline">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="application-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <span class="badge">Admissions 2026-27</span>
+                    <h2>Online Application Form</h2>
+                    <p>Please fill out the form below to initiate the admission process. Our team will contact you shortly.</p>
+                </div>
+
+                <div class="instructions">
+                    <p><strong>Note for Administrator:</strong> To display your Google Form here, please replace the placeholder below with your Google Form embed code (iframe).</p>
+                </div>
+
+                <div class="google-form-wrapper">
+                    <!-- REPLACE THE IFRAME BELOW WITH YOUR GOOGLE FORM EMBED CODE -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_YOUR_FORM_ID_HERE/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/logo.png" alt="Howard Lane Logo"
+                        style="height: 50px; width: auto; background: white; padding: 5px; border-radius: 8px;">
+                    <div class="logo-text">
+                        <h3>Howard Lane</h3>
+                        <span>Senior School</span>
+                    </div>
+                </a>
+                <p>Providing each student a diverse education in a safe, supportive environment that promotes
+                    self-discipline, motivation, and excellence.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/howardlanethatha" target="_blank"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/howard_lane_senior_school/?hl=en" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#academics">Academics</a></li>
+                    <li><a href="index.html#campus">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="public-disclosure.html">Public Disclosure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#">Primary School</a></li>
+                    <li><a href="#">Middle School</a></li>
+                    <li><a href="#">High School</a></li>
+                    <li><a href="#">Advanced Placement</a></li>
+                    <li><a href="#">Extracurriculars</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map'></i> Village- Thatha Chabhal Distt. Tarn Taran-143301</li>
+                    <li><i class='bx bx-phone'></i> <a href="tel:+917087578590">+91 7087578590</a> <br> <a href="tel:+919878029600">+91 98780-29600</a></li>
+                    <li><i class='bx bx-envelope'></i> <a href="mailto:Howardlanethatha@Gmail.com">Howardlanethatha@Gmail.com</a></li>
+                    <li><i class='bx bxs-institution'></i> Affiliation No: 1630861 <br> School Code: 20871</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Howard Lane Senior School. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Back to top" aria-label="Scroll back to top">
+        <i class='bx bx-chevron-up'></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
