@@ -916,11 +916,14 @@ p {
         right: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background: var(--white);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         flex-direction: column;
         padding: 2rem;
         transition: var(--transition);
         border-top: 1px solid var(--border-color);
+        box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.active {
@@ -937,15 +940,58 @@ p {
     .nav-link {
         display: block;
         width: 100%;
-        font-size: 1.125rem;
+        font-size: 1.15rem;
     }
 
     .mobile-toggle {
         display: block;
     }
 
+    .logo-text h1 {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        padding-top: 120px;
+        min-height: auto;
+        padding-bottom: 3rem;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-bottom: 2rem;
+    }
+
+    .quick-stats {
+        position: static !important;
+        transform: none !important;
+        margin-top: 2rem !important;
+    }
+
     .hero-title {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .badge {
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .about-grid {
@@ -953,12 +999,35 @@ p {
     }
 
     .about-section {
-        padding-top: 18rem;
+        padding-top: 14rem;
     }
 
     .about-images {
         margin-bottom: 3rem;
-        padding-right: 2rem;
+        padding-right: 0;
+    }
+
+    .floating-img {
+        width: 50%;
+        bottom: -5%;
+        right: 0;
+        border-width: 5px;
+    }
+
+    .experience-badge {
+        width: 90px;
+        height: 90px;
+        border-width: 4px;
+        top: -10%;
+        left: -5%;
+    }
+
+    .experience-badge .num {
+        font-size: 1.5rem;
+    }
+
+    .experience-badge .text {
+        font-size: 0.65rem;
     }
 
     .space-between {
@@ -988,6 +1057,7 @@ p {
 @media (max-width: 600px) {
     .stats-grid {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .stat-card::after {
@@ -996,14 +1066,60 @@ p {
 
     .stat-card {
         border-bottom: 1px solid var(--border-color);
+        padding: 1.5rem;
+        justify-content: center;
+    }
+
+    .stat-card:last-child {
+        border-bottom: none;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-header .title {
+        font-size: 2rem;
     }
 
     .cards-grid {
         grid-template-columns: 1fr;
     }
 
+    .feature-card .card-content {
+        padding: 1.5rem;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-col ul {
+        align-items: center;
+    }
+
+    .contact-info li {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     .footer-bottom {
