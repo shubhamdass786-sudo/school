@@ -22,7 +22,7 @@ assets/staff/Karamjeet_Kaur.jpg
 assets/staff/Karandeep_Singh.jpg
 assets/staff/Khushpal_Sundram_Lehri.jpg
 assets/staff/Lalita_Devi.jpg
-assets/staff/Makhtool_Singh_Chairman_.jpg
+assets/staff/Maktool_Singh_Chairman_.jpg
 assets/staff/Malkeet_Kaur.jpg
 assets/staff/Mandeep_Kaur_UKG.jpg
 assets/staff/Manisha_Mehra.jpg
